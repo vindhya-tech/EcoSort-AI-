@@ -1,0 +1,10 @@
+# Ignore dataset and model files
+DATASET/
+model/
+*.h5
+*.zip
+*.csv
+
+# Python cache
+__pycache__/
+*.pyc
