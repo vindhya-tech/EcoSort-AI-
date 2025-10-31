@@ -1,10 +1,35 @@
-# Ignore dataset and model files
-DATASET/
-model/
-*.h5
-*.zip
-*.csv
+# =========================================
+# EcoSort-AI Project Git Ignore Rules
+# =========================================
 
-# Python cache
+# Ignore dataset folders
+DATASET/
+TEST/
+TRAIN/
+**/DATASET/**
+**/TEST/**
+**/TRAIN/**
+
+# Model files
+*.h5
+*.pkl
+*.pt
+
+# Cache, logs, temp files
 __pycache__/
-*.pyc"DATASET/" 
+*.pyc
+*.log
+
+# Virtual environments
+venv/
+.env/
+.env
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Streamlit cache
+.streamlit/
+
+# VSCode settings
+.vscode/
