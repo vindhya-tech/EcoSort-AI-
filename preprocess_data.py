@@ -7,7 +7,7 @@ import numpy as np
 train_dir = 'DATASET/TRAIN'
 test_dir = 'DATASET/TEST'
 
-# 1️⃣ Create ImageDataGenerator for preprocessing
+#  Create ImageDataGenerator for preprocessing
 train_datagen = ImageDataGenerator(
     rescale=1./255,
     rotation_range=20,
@@ -21,7 +21,7 @@ train_datagen = ImageDataGenerator(
 
 test_datagen = ImageDataGenerator(rescale=1./255)
 
-# 2️⃣ Load data from folders
+# Load data from folders
 train_data = train_datagen.flow_from_directory(
     train_dir,
     target_size=(128, 128),
@@ -36,7 +36,7 @@ test_data = test_datagen.flow_from_directory(
     class_mode='binary'
 )
 
-# 3️⃣ Visualize few samples
+#  Visualize few samples
 images, labels = next(train_data)
 plt.figure(figsize=(8, 8))
 for i in range(9):
@@ -47,4 +47,4 @@ for i in range(9):
 plt.tight_layout()
 plt.show()
 
-print("✅ Preprocessing completed successfully!")
+print(" Preprocessing completed successfully!")
