@@ -1,7 +1,4 @@
-# =========================================
 # EcoSort-AI Project Git Ignore Rules
-# =========================================
-
 # Ignore dataset folders
 DATASET/
 TEST/
