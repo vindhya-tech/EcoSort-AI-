@@ -56,7 +56,7 @@ model.summary()
 history = model.fit(train_data, validation_data=test_data, epochs=10)
 
 model.save("waste_classifier.h5")
-print("✅ Model retrained and saved as waste_classifier.h5")
+print("Model retrained and saved as waste_classifier.h5")
 #  Visualize few samples
 images, labels = next(train_data)
 plt.figure(figsize=(8, 8))
