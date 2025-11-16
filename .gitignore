@@ -8,7 +8,6 @@ TRAIN/
 **/TRAIN/**
 
 # Model files
-*.h5
 *.pkl
 *.pt
 
