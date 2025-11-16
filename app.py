@@ -78,7 +78,7 @@ with st.sidebar:
         """
     )
     st.markdown("---")
-    st.caption("Developed by: You (edit this in the sidebar)")
+    st.caption("Developed by: G Sri Vindhya")
 
 # -------------------------
 # Main UI
