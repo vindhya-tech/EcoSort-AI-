@@ -243,7 +243,7 @@ if input_image is not None:
     if show_gradcam:
         st.write(" Grad-CAM (where the model is looking)")
         try:
-            heatmap = make_gradcam_heatmap(arr, model)
+            heatmap = make_gradcam_heatmap(arr, model, last_conv_layer_name="Conv_1")
             overlay = overlay_heatmap_on_image(pil_for_display, heatmap, intensity=0.5)
             cols = st.columns([1,1])
             with cols[0]:
